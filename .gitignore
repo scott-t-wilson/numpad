@@ -3,6 +3,9 @@
 *.lo
 *.o
 *.obj
+*.elf
+*.hex
+*.d
 
 # Precompiled Headers
 *.gch
@@ -26,3 +29,6 @@
 *.exe
 *.out
 *.app
+
+*.sublime-workspace
+*.sublime-project
