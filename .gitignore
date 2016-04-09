@@ -30,5 +30,11 @@
 *.out
 *.app
 
+#sublime/osx
 *.sublime-workspace
 *.sublime-project
+.DS_Store
+
+#kicad auto backups
+_autosave*.kicad_pcb
+*.bak
