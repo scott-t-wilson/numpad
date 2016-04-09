@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name numpad)(type KiCad)(uri "$(KIPRJMOD)/numpad.pretty")(options "")(descr ""))
+  (lib (name Teensy)(type KiCad)(uri "$(KISYSMOD)Teensy.pretty")(options "")(descr ""))
+)

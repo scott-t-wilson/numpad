@@ -1,0 +1,8 @@
+"Id";"Designator";"Package";"Quantity";"Designation";"Supplier and ref";
+1;"U4,U2,U3";"TSSOP-16_4.4x5mm_Pitch0.65mm";3;"TLC6C598";;;
+2;"STA,STA,STA";"CHERRY_PCB_200_STABILIZER";3;"Stabilizer";;;
+3;"D1,D2,D3,D4,D5,D6,D7,D8,D9,D10,D11,D13,D14,D15,D16,D17,D18,D19,D21,D23,D24";"Diode_DO-41_SOD81_Horizontal_RM10";21;"D";;;
+4;"MX24,MX16,MX19,MX23,MX18,MX17,MX15,MX14,MX13,MX11,MX10,MX9,MX8,MX7,MX5,MX4,MX3,MX2,MX1,MX6,MX21";"CHERRY_PCB_100H_LED";21;"MX";;;
+5;"R1,R2,R3,R4,R5,R6,R7,R8,R9,R10,R11,R13,R14,R15,R16,R17,R18,R19,R21,R23,R24";"R_1206_HandSoldering";21;"R";;;
+6;"U1";"Teensy-3.2-partial-small";1;"Teensy_3.2_Partial_small";;;
+7;"C1,C2,C3";"C_0603_HandSoldering";3;"C";;;
