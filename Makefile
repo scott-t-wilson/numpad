@@ -46,24 +46,19 @@ CXXFLAGS = -s -std=gnu++0x -felide-constructors -fno-exceptions -fno-rtti
 CFLAGS =
 
 # compiler options specific to teensy version
-ifeq ($(TEENSY), 30)
-    CPPFLAGS += -D__MK20DX128__
-    LDSCRIPT = $(COREPATH)/mk20dx128.ld
+ifeq ($(TEENSY), 31)
+    CPPFLAGS += -D__MK20DX256__
+    LDSCRIPT = $(COREPATH)/mk20dx256.ld
+	TEENSY_CORE_SPEED = 96000000
+    UPLOAD_MMCU = mk20dx256
 else
-    ifeq ($(TEENSY), 31)
-        CPPFLAGS += -D__MK20DX256__
-        LDSCRIPT = $(COREPATH)/mk20dx256.ld
-		TEENSY_CORE_SPEED = 96000000
-        UPLOAD_MMCU = mk20dx256
+	ifeq ($(TEENSY), LC)
+    	CPPFLAGS += -D__MKL26Z64__
+    	LDSCRIPT = $(COREPATH)/mkl26z64.ld
+		TEENSY_CORE_SPEED = 48000000
+    	UPLOAD_MMCU = mkl26z64
     else
-    	ifeq ($(TEENSY), LC)
-        	CPPFLAGS += -D__MKL26Z64__
-        	LDSCRIPT = $(COREPATH)/mkl26z64.ld
-			TEENSY_CORE_SPEED = 48000000
-        	UPLOAD_MMCU = mkl26z64
-        else
-        	$(error Invalid setting for TEENSY)
-        endif
+    	$(error Invalid setting for TEENSY)
     endif
 endif
 
